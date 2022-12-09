@@ -1,0 +1,31 @@
+[gd_scene load_steps=2 format=3 uid="uid://be2c5xy723fqr"]
+
+[ext_resource type="Script" path="res://script/ribbon.gd" id="1_jg8fm"]
+
+[node name="ribbon" type="Node2D"]
+script = ExtResource("1_jg8fm")
+
+[node name="spawn1" type="Node2D" parent="."]
+position = Vector2(92, 675)
+
+[node name="Label" type="Label" parent="spawn1"]
+offset_right = 40.0
+offset_bottom = 23.0
+text = "R"
+
+[node name="spawn2" type="Node2D" parent="."]
+position = Vector2(251, 675)
+
+[node name="Label" type="Label" parent="spawn2"]
+offset_right = 40.0
+offset_bottom = 23.0
+text = "G
+"
+
+[node name="spawn3" type="Node2D" parent="."]
+position = Vector2(400, 672)
+
+[node name="Label" type="Label" parent="spawn3"]
+offset_right = 40.0
+offset_bottom = 23.0
+text = "B"
