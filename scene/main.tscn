@@ -1,0 +1,11 @@
+[gd_scene load_steps=3 format=3 uid="uid://cqo6uo80jgvqn"]
+
+[ext_resource type="PackedScene" uid="uid://be2c5xy723fqr" path="res://scene/ribbon.tscn" id="1_uxit3"]
+[ext_resource type="PackedScene" uid="uid://c0jl5ck6gwsku" path="res://scene/ball.tscn" id="2_daiya"]
+
+[node name="main" type="Node2D"]
+
+[node name="ribbon" parent="." instance=ExtResource("1_uxit3")]
+
+[node name="Ball" parent="." instance=ExtResource("2_daiya")]
+position = Vector2(123, 89)

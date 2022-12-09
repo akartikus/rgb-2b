@@ -9,12 +9,18 @@
 config_version=5
 
 _global_script_classes=[{
+"base": "RigidBody2D",
+"class": &"Ball",
+"language": &"GDScript",
+"path": "res://script/ball.gd"
+}, {
 "base": "Area2D",
 "class": &"Dot",
 "language": &"GDScript",
 "path": "res://script/dot.gd"
 }]
 _global_script_class_icons={
+"Ball": "",
 "Dot": ""
 }
 
@@ -28,3 +34,8 @@ config/icon="res://icon.svg"
 
 window/size/viewport_width=480
 window/size/viewport_height=720
+
+[layer_names]
+
+2d_physics/layer_1="DOTS"
+2d_physics/layer_2="BALLS"
