@@ -1,6 +1,7 @@
-[gd_scene load_steps=2 format=3 uid="uid://be2c5xy723fqr"]
+[gd_scene load_steps=3 format=3 uid="uid://be2c5xy723fqr"]
 
 [ext_resource type="Script" path="res://script/ribbon.gd" id="1_jg8fm"]
+[ext_resource type="PackedScene" uid="uid://cmnhufpi150fc" path="res://scene/dot.tscn" id="2_dane4"]
 
 [node name="ribbon" type="Node2D"]
 script = ExtResource("1_jg8fm")
@@ -13,6 +14,9 @@ offset_right = 40.0
 offset_bottom = 23.0
 text = "R"
 
+[node name="dot" parent="spawn1" instance=ExtResource("2_dane4")]
+modulate_color = Color(1, 0, 0, 1)
+
 [node name="spawn2" type="Node2D" parent="."]
 position = Vector2(251, 675)
 
@@ -22,6 +26,9 @@ offset_bottom = 23.0
 text = "G
 "
 
+[node name="dot" parent="spawn2" instance=ExtResource("2_dane4")]
+modulate_color = Color(0, 1, 0, 1)
+
 [node name="spawn3" type="Node2D" parent="."]
 position = Vector2(400, 672)
 
@@ -29,3 +36,6 @@ position = Vector2(400, 672)
 offset_right = 40.0
 offset_bottom = 23.0
 text = "B"
+
+[node name="dot" parent="spawn3" instance=ExtResource("2_dane4")]
+modulate_color = Color(0, 0, 1, 1)

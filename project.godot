@@ -8,6 +8,16 @@
 
 config_version=5
 
+_global_script_classes=[{
+"base": "Area2D",
+"class": &"Dot",
+"language": &"GDScript",
+"path": "res://script/dot.gd"
+}]
+_global_script_class_icons={
+"Dot": ""
+}
+
 [application]
 
 config/name="rgb-2b"
